@@ -11,49 +11,113 @@
     <title>Jogo da Forca</title>
 </head>
 <body>
-<!-- 
-    <div> forca </div>
 
-    <div> palavra secreta </div>
+    <header>
+        <h1>Jogo da Forca</h1>
+        <h3>Challenge Oracle One</h3>
+    </header>
 
-    <div> dica para a plavra secreta </div>
+    <section class="container">
 
-    <div> inseriar uma palavra </div>
- -->
-    <div class="keys">
-        <div data-key="keyq" class="key">Q</div>
-        <div data-key="keyw" class="key">W</div>
-        <div data-key="keye" class="key">E</div>
-        <div data-key="keye" class="key">R</div>
-        <div data-key="keyq" class="key">T</div>
-        <div data-key="keyw" class="key">Y</div>
-        <div data-key="keye" class="key">U</div>
-        <div data-key="keyq" class="key">I</div>
-        <div data-key="keyw" class="key">O</div>
-        <div data-key="keye" class="key">P</div>
-    </div>
-    <div class="keys">
-        <div data-key="keya" class="key">A</div>
-        <div data-key="keys" class="key">S</div>
-        <div data-key="keyd" class="key">D</div>
-        <div data-key="keye" class="key">F</div>
-        <div data-key="keyq" class="key">G</div>
-        <div data-key="keyw" class="key">H</div>
-        <div data-key="keye" class="key">J</div>
-        <div data-key="keyq" class="key">K</div>
-        <div data-key="keyw" class="key">L</div>
-        <div data-key="keye" class="key">Ç</div>
-    </div>
-    <div class="keys">
-        <div data-key="keyz" class="key">Z</div>
-        <div data-key="keyx" class="key">X</div>
-        <div data-key="keyc" class="key">C</div>
-        <div data-key="keyz" class="key">V</div>
-        <div data-key="keyx" class="key">B</div>
-        <div data-key="keyc" class="key">N</div>
-        <div data-key="keyc" class="key">M</div>
-    </div>
-    
+        <!-- fim do jogo / resultado -->
+        <div id="result"> Boa sorte! </div>
+
+        <!-- desenho da forca -->
+        <div>
+            <canvas id="tela" width="510" height="360"></canvas>
+        </div>
+
+        <div id="palavra"> <!-- palavra secreta --> </div>
+
+        <div id="dica"> <!-- palavra dica --> </div>
+
+        <div class="dbtn">
+            <div id="btnNovoJogo"> Novo Jogo </div>
+        </div>
+
+        <!-- inicio do teclado em ordem alfabética --><!--
+        <div class="key-b">
+            <div id="idkey-A" onclick="verificaLetra('A')" data-key="keya" class="key">A</div>
+            <div id="idkey-B" onclick="verificaLetra('B')" data-key="keyx" class="key">B</div>
+            <div id="idkey-C" onclick="verificaLetra('C')" data-key="keyc" class="key">C</div>
+            <div id="idkey-D" onclick="verificaLetra('D')" data-key="keyd" class="key">D</div>
+            <div id="idkey-E" onclick="verificaLetra('E')" data-key="keye" class="key">E</div>
+            <div id="idkey-F" onclick="verificaLetra('F')" data-key="keye" class="key">F</div>
+            <div id="idkey-G" onclick="verificaLetra('G')" data-key="keyq" class="key">G</div>
+            <div id="idkey-H" onclick="verificaLetra('H')" data-key="keyw" class="key">H</div>
+            <div id="idkey-I" onclick="verificaLetra('I')" data-key="keyq" class="key">I</div>
+        </div>
+        <div class="key-b">
+            <div id="idkey-J" onclick="verificaLetra('J')" data-key="keye" class="key">J</div>
+            <div id="idkey-K" onclick="verificaLetra('K')" data-key="keyq" class="key">K</div>
+            <div id="idkey-L" onclick="verificaLetra('L')" data-key="keyw" class="key">L</div>
+            <div id="idkey-M" onclick="verificaLetra('M')" data-key="keyc" class="key">M</div>
+            <div id="idkey-N" onclick="verificaLetra('N')" data-key="keyc" class="key">N</div>
+            <div id="idkey-O" onclick="verificaLetra('O')" data-key="keyw" class="key">O</div>
+            <div id="idkey-P" onclick="verificaLetra('P')" data-key="keye" class="key">P</div>
+            <div id="idkey-Q" onclick="verificaLetra('Q')" data-key="keyq" class="key">Q</div>
+            <div id="idkey-R" onclick="verificaLetra('R')" data-key="keye" class="key">R</div>
+        </div>
+        <div class="key-b">
+            <div id="idkey-S" onclick="verificaLetra('S')" data-key="keys" class="key">S</div>
+            <div id="idkey-T" onclick="verificaLetra('T')" data-key="keyq" class="key">T</div>
+            <div id="idkey-U" onclick="verificaLetra('U')" data-key="keye" class="key">U</div>
+            <div id="idkey-V" onclick="verificaLetra('V')" data-key="keyz" class="key">V</div>
+            <div id="idkey-W" onclick="verificaLetra('W')" data-key="keyw" class="key">W</div>
+            <div id="idkey-X" onclick="verificaLetra('X')" data-key="keyx" class="key">X</div>
+            <div id="idkey-Y" onclick="verificaLetra('Y')" data-key="keyw" class="key">Y</div>
+            <div id="idkey-Z" onclick="verificaLetra('Z')" data-key="keyz" class="key">Z</div>
+            <div id="idkey-Ç" onclick="verificaLetra('Ç')" data-key="keye" class="key">Ç</div>
+        </div>-->
+        <!-- final do teclado em ordem alfabética -->
+
+        <!-- inicio do tecaldo querty -->
+        <div class="key-b">
+            <div id="idkey-Q" onclick="verificaLetra('Q')" data-key="keyq" class="key">Q</div>
+            <div id="idkey-W" onclick="verificaLetra('W')" data-key="keyw" class="key">W</div>
+            <div id="idkey-E" onclick="verificaLetra('E')" data-key="keye" class="key">E</div>
+            <div id="idkey-R" onclick="verificaLetra('R')" data-key="keye" class="key">R</div>
+            <div id="idkey-T" onclick="verificaLetra('T')" data-key="keyq" class="key">T</div>
+            <div id="idkey-Y" onclick="verificaLetra('Y')" data-key="keyw" class="key">Y</div>
+            <div id="idkey-U" onclick="verificaLetra('U')" data-key="keye" class="key">U</div>
+            <div id="idkey-I" onclick="verificaLetra('I')" data-key="keyq" class="key">I</div>
+            <div id="idkey-O" onclick="verificaLetra('O')" data-key="keyw" class="key">O</div>
+            <div id="idkey-P" onclick="verificaLetra('P')" data-key="keye" class="key">P</div>
+        </div>
+        <div class="key-b">
+            <div id="idkey-A" onclick="verificaLetra('A')" data-key="keya" class="key">A</div>
+            <div id="idkey-S" onclick="verificaLetra('S')" data-key="keys" class="key">S</div>
+            <div id="idkey-D" onclick="verificaLetra('D')" data-key="keyd" class="key">D</div>
+            <div id="idkey-F" onclick="verificaLetra('F')" data-key="keye" class="key">F</div>
+            <div id="idkey-G" onclick="verificaLetra('G')" data-key="keyq" class="key">G</div>
+            <div id="idkey-H" onclick="verificaLetra('H')" data-key="keyw" class="key">H</div>
+            <div id="idkey-J" onclick="verificaLetra('J')" data-key="keye" class="key">J</div>
+            <div id="idkey-K" onclick="verificaLetra('K')" data-key="keyq" class="key">K</div>
+            <div id="idkey-L" onclick="verificaLetra('L')" data-key="keyw" class="key">L</div>
+            <div id="idkey-Ç" onclick="verificaLetra('Ç')" data-key="keye" class="key">Ç</div>
+        </div>
+        <div class="key-b">
+            <div id="idkey-Z" onclick="verificaLetra('Z')" data-key="keyz" class="key">Z</div>
+            <div id="idkey-X" onclick="verificaLetra('X')" data-key="keyx" class="key">X</div>
+            <div id="idkey-C" onclick="verificaLetra('C')" data-key="keyc" class="key">C</div>
+            <div id="idkey-V" onclick="verificaLetra('V')" data-key="keyz" class="key">V</div>
+            <div id="idkey-B" onclick="verificaLetra('B')" data-key="keyx" class="key">B</div>
+            <div id="idkey-N" onclick="verificaLetra('N')" data-key="keyc" class="key">N</div>
+            <div id="idkey-M" onclick="verificaLetra('M')" data-key="keyc" class="key">M</div>
+        </div>
+        <!-- final do teclado querty -->
+    </section>
+
+    <footer>
+        <p>Peterson 2022</p>
+        <!-- 
+        <p>https://github.com/petersonros</p>
+        <p>https://www.linkedin.com/in/peterson-roberto/</p>
+         -->
+    </footer>
+
+    <script src="assets/palavras.js"></script>
     <script src="assets/script.js"></script>
+    <script src="assets/canvas.js"></script>
 </body>
 </html>
