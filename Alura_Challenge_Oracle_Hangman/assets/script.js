@@ -20,7 +20,7 @@ function mostrarPalavra(){
 
     for(i = 0; i < palavraSorteada.length; i++){
         if(listaDinamica[i] == undefined){
-            listaDinamica[i] = "&nbsp;"
+            listaDinamica[i] = "&nbsp;" // adiciona um espaço vazio
             naTela.innerHTML = naTela.innerHTML + "<div class='letras'>" + listaDinamica[i] + "</div>"
         }
         else{
