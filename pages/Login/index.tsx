@@ -1,6 +1,6 @@
 import Image from "next/image";
 import mainLogo from "../../public/mainLogo.svg"
-import imgLogin from "../../public/login.svg"
+import imgLogin from "@/public/login.svg"
 import styles from "./Login.module.css";
 import { Button } from "@/components/Button";
 
