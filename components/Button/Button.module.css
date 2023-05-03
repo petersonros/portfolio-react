@@ -1,0 +1,15 @@
+.myBtn {
+  background-color: #fff;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 2.75rem;
+  border: 0;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.myBtn:hover {
+  box-shadow: 1px 5px 5px 1px rgba(255, 255, 255, 0.2);
+  transform: scale(1.03);
+}

@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loginContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 2rem;
+}
+
+.imgLogo {
+  margin: 0 10px;
+  height: auto;
+  width: 45px;
+}
+
+.loginTitle {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 3rem;
+}
+
+.imgLogin {
+  margin: 1rem auto;
+}
+
+.formArea {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.label {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.input {
+  border: solid 1px #4053ff;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  color: #4053ff;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  height: 3rem;
+  padding: 0 .75rem;
+  width: 18rem;
+}
+
+.alert {
+  color: #f00;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.button {
+  background-color: #4053ff ;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  border: 0;
+  border-radius: 0.75rem;
+  height: 2.5rem;
+  width: 100%;
+  margin: .5rem 0;
+}
