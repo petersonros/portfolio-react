@@ -1,25 +1,32 @@
 .container {
   display: flex;
-  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   max-width: 1100px;
-  padding: 16px;
+  height: 100vh;
+  margin: auto;
   width: 100%;
 }
 
-.hearder {
-  border-bottom: solid 2px #000;
-  height: auto;
-  margin: 0 0 16px 0;
-  padding: 0 0 16px 0;
+.header {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
 }
 
 .main {
-  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .footer {
-  border-top: solid 2px #000;
-  height: auto;
-  margin: 16px 0 0 0;
-  padding: 16px 0 0 0;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  padding: 16px 0 8px;
+  width: 100%;
 }

@@ -1,17 +1,12 @@
 import styles from "./Input.module.css";
+import { Inputs } from "@/types/Inputs";
 
 type Props = {
-  label: string;
-  type: string;
-  placeholder: string;
+  inputs: Inputs[];
 };
 
-const Input = ({ label, type, placeholder }: Props) => {
-  return (
-    <input className={styles.input}>
-      {label}, {type}, {placeholder},
-    </input>
-  );
+const Input = ({ inputs }: Props) => {
+  return <input className={styles.input}>{}</input>;
 };
 
 export default Input;
