@@ -1,17 +1,14 @@
 import Image from "next/image";
-import mainLogo from "../../public/mainLogo.svg"
-import imgLogin from "@/public/login.svg"
+import imgLogin from "@/public/login.svg";
 import styles from "./Login.module.css";
 import { Button } from "@/components/Button";
+import LogoTitle from "@/components/LogoTitle";
 
 const Login = () => {
   return (
     <div className={styles.container}>
       <div className={styles.loginContainer}>
-        <div className={styles.logoContainer}>
-          <Image className={styles.imgLogo} src={mainLogo} alt="Logo" />
-          <h1 className={styles.loginTitle}>Finanças</h1>
-        </div>
+        <LogoTitle />
         <Image
           alt="Login"
           className={styles.imgLogin}
