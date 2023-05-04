@@ -3,12 +3,15 @@ import imgLogin from "@/public/login.svg";
 import styles from "./Login.module.css";
 import { Button } from "@/components/Button";
 import LogoTitle from "@/components/LogoTitle";
+import Input from "@/components/Input";
+import { Layout } from "@/components/Layout";
 
 const Login = () => {
   return (
     <div className={styles.container}>
       <div className={styles.loginContainer}>
         <LogoTitle />
+
         <Image
           alt="Login"
           className={styles.imgLogin}
@@ -16,7 +19,9 @@ const Login = () => {
           priority
         />
       </div>
+
       <form className={styles.formArea}>
+
         <label className={styles.label} htmlFor="email">
           Seu e-mail:
         </label>

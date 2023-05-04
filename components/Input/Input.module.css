@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+}
+
+.input {
+  border: solid 1px #4053ff;
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: #4053ff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  height: 48px;
+  margin: 16px;
+  padding: 0 12px;
+  width: 100%;
+}
