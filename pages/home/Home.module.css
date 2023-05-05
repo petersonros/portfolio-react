@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.leftArea {
+  display: flex;
+  flex-direction: column;
+  height: 380px;
+  width: 380px;
+}
+
+.rightArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 380px;
+  width: 380px;
+}
+
+.title {
+  color: #fff;
+  font-size: 2.75em;
+  font-weight: 600;
+  line-height: 3.25rem;
+}
+
+.text {
+   color: #fff;
+   font-size: 1.75rem;
+   line-height: 2.25rem;
+}
+.buttonArea {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 350px;
+  margin: 1.25rem 0 0;
+}

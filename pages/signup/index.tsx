@@ -1,6 +1,6 @@
 import Image from "next/image";
-import imgLogin from "@/public/login.svg";
-import styles from "./Login.module.css";
+import imgSignup from "@/public/signup.svg";
+import styles from "./Signup.module.css";
 import { Button } from "@/components/Button";
 import LogoTitle from "@/components/LogoTitle";
 import Input from "@/components/Input";
@@ -13,12 +13,12 @@ const Login = () => {
         <Image
           alt="Login"
           className={styles.imgLogin}
-          src={imgLogin}
+          src={imgSignup}
           priority
         />
       </div>
       <div className={styles.loginContainer}>
-      <span className={styles.title}>Entrar</span>
+        <span className={styles.title}>Registrar</span>
         <Input
           placeholder="Digite seu e-mail"
           type="email"
@@ -28,7 +28,14 @@ const Login = () => {
         />
         <Input
           placeholder="Digite sua Senha"
-          type="passoword"
+          type="email"
+          id="email"
+          name="email"
+          required
+        />
+        <Input
+          placeholder="Repita sua senha"
+          type="email"
           id="email"
           name="email"
           required
