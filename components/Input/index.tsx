@@ -1,12 +1,10 @@
 import styles from "./Input.module.css";
-import { Inputs } from "@/types/Inputs";
+import { InputHTMLAttributes } from "react";
 
-type Props = {
-  inputs: Inputs[];
-};
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {}
 
-const Input = ({ inputs }: Props) => {
-  return <input className={styles.input}>{}</input>;
+const Input = ({ ...props }: InputProps) => {
+  return <input className={styles.input} {...props} />;
 };
 
 export default Input;

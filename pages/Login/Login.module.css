@@ -6,19 +6,19 @@
   height: 100vh;
 }
 
+.logoContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 2rem;
+}
+
 .loginContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-
-.logoContainer {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-  margin: 0 2rem;
 }
 
 .imgLogo {
@@ -60,7 +60,7 @@
   font-weight: 500;
   line-height: 1.5rem;
   height: 3rem;
-  padding: 0 .75rem;
+  padding: 0 0.75rem;
   width: 18rem;
 }
 
@@ -72,7 +72,7 @@
 }
 
 .button {
-  background-color: #4053ff ;
+  background-color: #4053ff;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.25rem;
@@ -80,5 +80,5 @@
   border-radius: 0.75rem;
   height: 2.5rem;
   width: 100%;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }

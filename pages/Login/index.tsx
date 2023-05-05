@@ -4,12 +4,11 @@ import styles from "./Login.module.css";
 import { Button } from "@/components/Button";
 import LogoTitle from "@/components/LogoTitle";
 import Input from "@/components/Input";
-import { Layout } from "@/components/Layout";
 
 const Login = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.loginContainer}>
+      <div className={styles.logoContainer}>
         <LogoTitle />
 
         <Image
@@ -19,38 +18,30 @@ const Login = () => {
           priority
         />
       </div>
-
-      <form className={styles.formArea}>
-
-        <label className={styles.label} htmlFor="email">
-          Seu e-mail:
-        </label>
-        <input
-          className={styles.input}
+      <div className={styles.loginContainer}>
+        <Input
+          placeholder="Digite seu e-mail"
           type="email"
           id="email"
           name="email"
           required
         />
-        <span className={styles.alert}>E-mail não encontrado.</span>
-        <label className={styles.label} htmlFor="password">
-          Sua senha:
-        </label>
-        <input
-          className={styles.input}
-          type="password"
-          id="password"
-          name="password"
+        <Input
+          placeholder="Digite sua Senha"
+          type="email"
+          id="email"
+          name="email"
           required
         />
-        <span className={styles.alert}>Senha não encontrada.</span>
-        <Button
-          label={"Login"}
-          onClick={function (): void {
-            throw new Error("Function not implemented.");
-          }}
+        <Input
+          placeholder="Repita sua senha"
+          type="email"
+          id="email"
+          name="email"
+          required
         />
-      </form>
+        <Button label="Enviar" />
+      </div>
     </div>
   );
 };
