@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./Home.module.css";
 import { Button } from "@/components/Button";
-import imgMainLogo from "../../public/mainLogo.svg";
+import imgHomeLogo from "../../public/mainLogo.svg";
 
 const Home = () => {
   return (
@@ -10,7 +10,8 @@ const Home = () => {
         <span className={styles.title}>Finanças</span>
         <Image
           alt="Imagen do Logo"
-          src={imgMainLogo}
+          className={styles.homeLogo}
+          src={imgHomeLogo}
           height={180}
           width={180}
         />

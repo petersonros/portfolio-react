@@ -9,8 +9,21 @@
 .leftArea {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 380px;
-  width: 380px;
+  margin: 0 1rem;
+  width: auto;
+}
+
+.title {
+  color: #fff;
+  font-size: 2.75em;
+  font-weight: 600;
+  line-height: 3.25rem;
+}
+.homeLogo {
+  margin: 1rem 0 0;
 }
 
 .rightArea {
@@ -19,14 +32,8 @@
   align-items: center;
   justify-content: center;
   height: 380px;
-  width: 380px;
-}
-
-.title {
-  color: #fff;
-  font-size: 2.75em;
-  font-weight: 600;
-  line-height: 3.25rem;
+  margin: 0 1rem;
+  width: auto;
 }
 
 .text {
