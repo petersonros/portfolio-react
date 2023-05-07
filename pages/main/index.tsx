@@ -1,3 +1,4 @@
+import InputArea from "@/components/InputArea";
 import styles from "./Main.module.css";
 import InfoArea from "@/components/InfoArea";
 
@@ -9,7 +10,7 @@ const main = () => {
       </header>
       <div className={styles.body}>
         <InfoArea />
-        <div className={styles.ImputArea}></div>
+        <InputArea />
         <div className={styles.TableArea}></div>
       </div>
     </div>
