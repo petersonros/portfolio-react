@@ -1,6 +1,7 @@
 import InputArea from "@/components/InputArea";
 import styles from "./Main.module.css";
 import InfoArea from "@/components/InfoArea";
+import TableArea from "@/components/TableArea";
 
 const main = () => {
   return (
@@ -11,7 +12,7 @@ const main = () => {
       <div className={styles.body}>
         <InfoArea />
         <InputArea />
-        <div className={styles.TableArea}></div>
+        <TableArea />
       </div>
     </div>
   );
