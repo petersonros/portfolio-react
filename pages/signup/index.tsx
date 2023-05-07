@@ -34,7 +34,7 @@ const Login = () => {
           required
         />
         <Input
-          placeholder="Repita sua senha"
+          placeholder="Confirme sua senha"
           type="email"
           id="email"
           name="email"
