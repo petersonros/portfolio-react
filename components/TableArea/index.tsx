@@ -1,3 +1,4 @@
+import TableItem from "../TableItem";
 import styles from "./TableArea.module.css";
 
 const TableArea = () => {
@@ -12,7 +13,9 @@ const TableArea = () => {
             <th className={styles.tableColumn}>Valor</th>
           </tr>
         </thead>
-        <tbody>Table Item</tbody>
+        <tbody>
+          <TableItem />
+        </tbody>
       </div>
     </>
   );

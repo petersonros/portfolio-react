@@ -1,0 +1,19 @@
+.tableItem {
+  color: #000;
+}
+
+.tableItem__column {
+  padding: 10px 0;
+}
+
+.tableItem__category {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #f00;
+}
+
+.tableItem__value {
+  color:#000
+}
