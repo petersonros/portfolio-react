@@ -1,16 +1,22 @@
 import styles from "./TableItem.module.css";
+import { Item } from "@/types/Item";
+import { Category } from "@/types/Category";
 
-const TableItem = () => {
+type Props = {
+  item: Item;
+};
+
+const TableItem = ({ item }: Props) => {
   return (
     <>
       <tr className={styles.tableItem}>
-        <td className={styles.tableItem__column}>Date Item</td>
+        <td className={styles.tableItem__column}>{item.date}</td>
         <td className={styles.tableItem__column}>
-          <div className={styles.tableItem__category}>Category Title</div>
+          <span className={styles.tableItem__category}>{item.category}</span>
         </td>
-        <td className={styles.tableItem__column}>Item Title</td>
+        <td className={styles.tableItem__column}>{item.title}</td>
         <td className={styles.tableItem__column}>
-          <div className={styles.tableItem__value}>R$ Item Value</div>
+          <span className={styles.tableItem__value}>R${item.value}</span>
         </td>
       </tr>
     </>

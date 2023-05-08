@@ -1,7 +1,12 @@
 import TableItem from "../TableItem";
 import styles from "./TableArea.module.css";
+import { Item } from "@/types/Item";
 
-const TableArea = () => {
+type Props = {
+  list: Item[];
+};
+
+const TableArea = ({ list }: Props) => {
   return (
     <>
       <div className={styles.tableArea}>
@@ -14,7 +19,9 @@ const TableArea = () => {
           </tr>
         </thead>
         <tbody>
-          <TableItem />
+          {list.map((item, index) => (
+            <TableItem key={index} item={item} />
+          ))}
         </tbody>
       </div>
     </>
