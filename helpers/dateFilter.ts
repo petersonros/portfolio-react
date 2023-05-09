@@ -32,7 +32,7 @@ export const formatDate = (date: Date): string => {
 const addZeroToDate = (n: number): string => (n < 10 ? `0${n}` : `${n}`);
 
 export const formatCurrentMonth = (getCurrentMonth: string): string => {
-  let [year, month] = getCurrentMonth.split("-");
+  let [year, month] = getCurrentMonth?.split("-") ?? [];
   let months = [
     "Janeiro",
     "Fevereiro",

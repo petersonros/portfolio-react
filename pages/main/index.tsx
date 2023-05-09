@@ -5,11 +5,11 @@ import TableArea from "@/components/TableArea";
 
 const main = () => {
   return (
-    <div className={styles.container}>
-      <header className={styles.header}>
-        <h1 className={styles.headerText}>Finanças</h1>
+    <div className={styles.main}>
+      <header className={styles.main__header}>
+        <h1 className={styles.main__headerText}>Finanças</h1>
       </header>
-      <div className={styles.body}>
+      <div className={styles.main__body}>
         <InfoArea />
         <InputArea />
         <TableArea />

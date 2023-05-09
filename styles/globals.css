@@ -9,6 +9,8 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
+
+
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
     #16abff33 0deg,
@@ -105,3 +107,38 @@ a {
     color-scheme: dark;
   }
 }
+
+/* --simons_colors
+#DCE4F2
+#BF8969
+#732002
+#400101
+#260101 */
+
+/* --simons__bright
+#D2D3D9
+#A6A394
+#400101
+#260101
+#0D0000 */
+
+/* --simons__light
+#DCE4F2
+#A6A394
+#8C3A1C
+#D9B7B0
+#400101 */
+
+/* --simons__deep
+#D2D3D9
+#732002
+#400101
+#260101
+#0D0000 */
+
+/* --simons__dark
+#6C7B88
+#BBB8A9
+#681510
+#470C08
+#2C0907 */

@@ -1,21 +1,21 @@
-.container {
+.main {
   width: 100%;
 }
 
-.header {
-  background-color: darkblue;
+.main__header {
+  background-color: #0071ff33;
   height: 150px;
   text-align: center;
 }
 
-.headerText {
+.main__headerText {
   margin: 0;
   padding: 0;
   color: #fff;
   padding-top: 30px;
 }
 
-.body {
+.main__body {
   margin: auto;
   max-width: 900px;
   margin-bottom: 50px;
