@@ -8,7 +8,7 @@ type Props = {
 
 const TableArea = ({ list }: Props) => {
   return (
-    <div className={styles.tableArea}>
+    <table className={styles.tableArea}>
       <thead>
         <tr>
           <th className={styles.tableColumn} style={{ width: "100px" }}>
@@ -28,7 +28,7 @@ const TableArea = ({ list }: Props) => {
           list.length > 0 &&
           list.map((item, index) => <TableItem key={index} item={item} />)}
       </tbody>
-    </div>
+    </table>
   );
 };
 
