@@ -12,29 +12,31 @@ const TableItem = ({ item }: Props) => {
   const valueColor = categories[item.category].expense ? "red" : "green";
   return (
     <>
-    <tr className={styles.tableItem}>
-      
-      <td className={`${styles.tableItem__column} ${styles.tableItem__date}`}>
-        {formatDate(item.date)}
-      </td>
+      <tr className={styles.tableItem}>
+        <td className={`${styles.tableItem__column} ${styles.tableItem__date}`}>
+          {formatDate(item.date)}
+        </td>
 
-      <td className={styles.tableItem__column}>
-        <span
-          className={styles.tableItem__category}
-          style={{ backgroundColor: categoryColor }}
-        >
-          {item.category}
-        </span>
-      </td>
+        <td className={styles.tableItem__column}>
+          <span
+            className={styles.tableItem__category}
+            style={{ backgroundColor: categoryColor }}
+          >
+            {categories[item.category].title}
+          </span>
+        </td>
 
-      <td className={styles.tableItem__column}>{item.title}</td>
-      
-      <td className={styles.tableItem__column}>
-        <span className={styles.tableItem__value} style={{ color: valueColor }}>
-          R${item.value}
-        </span>
-      </td>
-    </tr>
+        <td className={styles.tableItem__column}>{item.title}</td>
+
+        <td className={styles.tableItem__column}>
+          <span
+            className={styles.tableItem__value}
+            style={{ color: valueColor }}
+          >
+            R${item.value}
+          </span>
+        </td>
+      </tr>
     </>
   );
 };

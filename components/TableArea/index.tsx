@@ -1,5 +1,5 @@
-import TableItem from "../TableItem";
 import styles from "./TableArea.module.css";
+import TableItem from "../TableItem";
 import { Item } from "@/types/Item";
 
 type Props = {
@@ -17,7 +17,9 @@ const TableArea = ({ list }: Props) => {
           <th className={styles.tableColumn} style={{ width: "130px" }}>
             Categoria
           </th>
-          <th className={styles.tableColumn}>Título</th>
+          <th className={styles.tableColumn} style={{ width: "auto" }}>
+            Título
+          </th>
           <th className={styles.tableColumn} style={{ width: "150px" }}>
             Valor
           </th>

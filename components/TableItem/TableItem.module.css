@@ -11,10 +11,12 @@
 }
 
 .tableItem__category {
+  font-size: 1.25rem;
   display: inline-block;
   padding: 5px 10px;
   border-radius: 5px;
   color: #fff;
+  width: auto;
 }
 
 .tableItem__value {
