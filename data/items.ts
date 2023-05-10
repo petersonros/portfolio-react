@@ -5,13 +5,13 @@ export const items: Item[] = [
     date: new Date(2023, 4, 15),
     category: "food",
     title: "Almoço",
-    value: 32.12,
+    value: 32.00,
   },
   {
     date: new Date(2023, 4, 15),
     category: "rent",
     title: "Lanche",
-    value: 28.12,
+    value: 40.00,
   },
   {
     date: new Date(2023, 4, 16),

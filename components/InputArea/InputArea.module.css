@@ -1,4 +1,5 @@
 .inputArea {
+  color: #000;
   background-color: #fff;
   box-shadow: 0px 0px 5px #ccc;
   border-radius: 10px;
@@ -20,6 +21,7 @@
 }
 
 .inputArea__input {
+  color: #000;
   background-color: #fff;
   width: 100%;
   height: 30px;
