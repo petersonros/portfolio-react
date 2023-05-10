@@ -20,8 +20,11 @@ const TableArea = ({ list }: Props) => {
           <th className={styles.tableColumn} style={{ width: "auto" }}>
             Título
           </th>
-          <th className={styles.tableColumn} style={{ width: "150px" }}>
+          <th className={styles.tableColumn} style={{ width: "100px" }}>
             Valor
+          </th>
+          <th className={styles.tableColumn} style={{ width: "20px" }}>
+            &nbsp;
           </th>
         </tr>
       </thead>

@@ -14,11 +14,20 @@
   font-size: 1.25rem;
   display: inline-block;
   padding: 5px 10px;
-  border-radius: 5px;
+  border-radius: var( --border-radius);
   color: #fff;
   width: auto;
 }
 
 .tableItem__value {
   color:#000
+}
+
+.tableItem__erase {
+  text-align: center;
+  transition: ease-in .5s;
+}
+
+.tableItem__erase:hover{
+  transform: scale(1.5) rotate(105deg);
 }

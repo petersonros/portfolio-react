@@ -1,7 +1,9 @@
 :root {
   --max-width: 1100px;
   --border-radius: 8px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: #0885ff33;
   --background-start-rgb: 214, 219, 220;
@@ -38,9 +40,9 @@
   --card-border-rgb: 131, 134, 135;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
+    --foreground-rgb: #16abff33;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
 
@@ -69,7 +71,7 @@
     --card-rgb: 100, 100, 100;
     --card-border-rgb: 200, 200, 200;
   }
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -83,24 +85,9 @@ body {
   overflow-x: hidden;
 }
 
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
-
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(rgb(220, 228, 242))
-    )
-    rgb(rgb(38, 1, 1));
+  background: #54d6ff33;
 }
 
 a {
@@ -108,43 +95,13 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
-}
+} */
 
-/* --simons_colors
-#DCE4F2
-#BF8969
-#732002
-#400101
-#260101 */
-
-/* --simons__bright
-#D2D3D9
-#A6A394
-#400101
-#260101
-#0D0000 */
-
-/* --simons__light
-#DCE4F2
-#A6A394
-#8C3A1C
-#D9B7B0
-#400101 */
-
-/* --simons__deep
-#D2D3D9
-#732002
-#400101
-#260101
-#0D0000 */
-
-/* --simons__dark
-#6C7B88
-#BBB8A9
-#681510
-#470C08
-#2C0907 */
+/*--colors #DCE4F2 #BF8969 #732002 #400101 #260101 */
+/*--deep   #D2D3D9 #732002 #400101 #260101 #0D0000 */
+/*--light  #DCE4F2 #A6A394 #8C3A1C #D9B7B0 #400101 */
+/*--dark   #6C7B88 #BBB8A9 #681510 #470C08 #2C0907 */

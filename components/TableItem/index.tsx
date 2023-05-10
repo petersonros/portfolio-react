@@ -36,6 +36,12 @@ const TableItem = ({ item }: Props) => {
             R${item.value}
           </span>
         </td>
+
+        <td
+          className={`${styles.tableItem__column} ${styles.tableItem__erase}`}
+        >
+          🗑️
+        </td>
       </tr>
     </>
   );

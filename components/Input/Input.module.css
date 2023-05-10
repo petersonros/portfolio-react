@@ -1,6 +1,6 @@
 .input {
   border: solid 1px #4053ff;
-  border-radius: 8px;
+  border-radius: var( --border-radius);
   background-color: #ffffff;
   color: #4053ff;
   font-size: 20px;

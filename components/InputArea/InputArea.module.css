@@ -2,7 +2,7 @@
   color: #000;
   background-color: #fff;
   box-shadow: 0px 0px 5px #ccc;
-  border-radius: 10px;
+  border-radius: var( --border-radius);
   padding: 20px;
   margin-top: 20px;
   display: flex;
@@ -27,7 +27,18 @@
   height: 30px;
   padding: 0 5px;
   border: 1px solid lightblue;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
+}
+
+.inputArea__input[type=number]::-webkit-inner-spin-button,
+.inputArea__input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  margin: 0;
 }
 
 .inputArea__button {
@@ -35,7 +46,7 @@
   height: 30px;
   padding: 0 5px;
   border: 1px solid lightblue;
-  border-radius: 5px;
+  border-radius: var( --border-radius);
   background-color: lightblue;
   color: black;
   cursor: pointer;

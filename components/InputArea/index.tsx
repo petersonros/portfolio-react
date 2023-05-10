@@ -92,7 +92,7 @@ const InputArea = ({ onAdd }: Props) => {
       </div>
 
       <div className={styles.inputArea__label}>
-        <div className={styles.inputArea__title}>valor</div>
+        <div className={styles.inputArea__title}>Valor</div>
         <input
           className={styles.inputArea__input}
           type="number"

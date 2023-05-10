@@ -33,7 +33,7 @@ const Login = () => {
           name="email"
           required
         />
-        <Button label="Enviar" />
+        <Button label="Enviar" src="/main" />
       </div>
     </div>
   );
